@@ -1,0 +1,2 @@
+,"	Accuracy",Percision_Malignant,Recall_Malignant,F1_Malignant,Percision_Benign,Recall_Benign,F1_Benign,Macro_F1,Balanced_accuracy,runtime
+Efficient_SU2,0.90518553,0.933347184,0.801993355,0.861331941,0.892952938,0.966353678,0.92787481,0.894603375,0.884173517,136m 36.1s
