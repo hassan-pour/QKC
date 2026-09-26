@@ -530,7 +530,7 @@ Relevant academic references will be added to the final research report and cita
 
 ## Author
 
-**Hassan Pourhoseini**
+**Hassan Pourhoseyni**
 
 B.Sc. Student in Computer Engineering  
 University of Tehran
