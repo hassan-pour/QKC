@@ -357,13 +357,11 @@ quantum-kernel-classification/
 │   ├── preprocessing.py
 │   └── metrics.py
 │
-├── results/
-│   ├── classical_results.csv
-│   └── quantum_results.csv
-│   └── combined_results.csv
-│
-└── report/
-    └── preliminary_report.pdf
+└── results/
+    ├── classical_results.csv
+    ├── quantum_results.csv
+    └── combined_results.csv
+ 
 ```
 
 The exact filenames may evolve as the project develops.
