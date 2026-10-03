@@ -323,7 +323,7 @@ Stratification is used for classification experiments so that the class distribu
 
 ## Reproducibility
 
-The experiments are implemented in Python using Qiskit and Qiskit Aer.
+The experiments are implemented in Python using Qiskit.
 
 Current development environment:
 
@@ -463,7 +463,7 @@ Several extensions are planned for future versions of the project.
 
 ### Noise Experiments
 
-Introduce realistic noise models using Qiskit Aer and investigate how quantum kernel performance changes under noise.
+Introduce realistic noise models using Real Hardware and Qiskit Aer and investigate how quantum kernel performance changes under noise.
 
 ### Circuit Depth
 
