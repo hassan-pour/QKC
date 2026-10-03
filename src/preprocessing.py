@@ -11,7 +11,7 @@ def unitary_preparation(X_train : np.ndarray, X_test : np.ndarray):
     X_train_padded = np.pad(X_train_scaled, pad_width=[(0, 0), (0, 2)])
     X_test_padded = np.pad(X_test_scaled, pad_width=[(0, 0), (0, 2)])
 
-    # L2 normalization for amplitude encoding
+    # L2 normalization for Efficient SU2
     X_train_normalized = (
         X_train_padded /
         np.linalg.norm(X_train_padded, axis=1, keepdims=True)
