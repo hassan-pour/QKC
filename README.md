@@ -357,13 +357,11 @@ quantum-kernel-classification/
 │   ├── preprocessing.py
 │   └── metrics.py
 │
-├── results/
-│   ├── classical_results.csv
-│   └── quantum_results.csv
-│   └── combined_results.csv
-│
-└── report/
-    └── preliminary_report.pdf
+└── results/
+    ├── classical_results.csv
+    ├── quantum_results.csv
+    └── combined_results.csv
+ 
 ```
 
 The exact filenames may evolve as the project develops.
@@ -530,7 +528,7 @@ Relevant academic references will be added to the final research report and cita
 
 ## Author
 
-**Hassan Pourhoseini**
+**Hassan Pourhoseyni**
 
 B.Sc. Student in Computer Engineering  
 University of Tehran
@@ -544,11 +542,3 @@ Research interests:
 - Quantum Algorithms
 
 ---
-
-## Project Status
-
-**Current version:** `v0.1-preliminary`
-
-This repository represents an ongoing independent research project. The experimental methodology and research questions may evolve as new results are obtained.
-
-The current version should be considered a preliminary research stage rather than a final publication.
