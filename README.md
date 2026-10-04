@@ -165,6 +165,8 @@ These models provide classical reference points for evaluating the quantum appro
 
 ### 1. EfficientSU2-based Quantum Kernel
 
+### 2. Custom feature map
+
 The first quantum approach investigates a parameterized quantum circuit based on `EfficientSU2`.
 
 
@@ -177,7 +179,7 @@ Classical features
 Parameter mapping
        │
        ▼
-EfficientSU2
+Quantum feature map
        │
        ▼
 Quantum state
@@ -265,8 +267,8 @@ The results table therefore follows this structure:
 | RBF SVM | 0.9210 | 0.9681 | 0.8160 | 0.8830 | 0.9020 | 0.9831 | 0.9402 | 0.9116 | 0.8995 |
 | Polynomial SVM | 0.9122 | 0.9613 | 0.7971 | 0.8693 | 0.8922 | 0.9803 | 0.9337 | 0.9015 | 0.8887 |
 | Sigmoid SVM | 0.4497 | 0.2064 | 0.1652 | 0.1804 | 0.5531 | 0.6194 | 0.5827 | 0.3816 | 0.3923 |
-| EfficientSU2 Quantum Kernel | 0.9051 | 0.9333 | 0.8020 | 0.8613 | 0.8929 | 0.9663 | 0.9278 | 0.8946 | 0.8841 |
-
+| EfficientSU2 Quantum Kernel | 0.9718 | 0.9714 | 0.9528 | 0.9618 | 0.9724 | 0.9831 | 0.9777 | 0.9697 | 0.9680 |
+| Custom Quantum Kernel | 0.9736 | 0.9724 | 0.9574 | 0.9646 | 0.9751 | 0.9831 | 0.9790 | 0.9718 | 0.9703 |
 ---
 
 ## Experimental Variables
@@ -351,6 +353,7 @@ quantum-kernel-classification/
 │
 ├── notebooks/
 │   ├── classical_kernels.ipynb
+│   ├── quantum_custom_hybrid_angle_phase.ipynb
 │   └── quantum_efficient_su2.ipynb
 │
 ├── src/

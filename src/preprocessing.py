@@ -2,23 +2,21 @@
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 
-def unitary_preparation(X_train : np.ndarray, X_test : np.ndarray):
+def efficient_su2_preparation(X_train : np.ndarray, X_test : np.ndarray):
     scaler = MinMaxScaler()
     
-    X_train_scaled = scaler.fit_transform(X_train)
-    X_test_scaled = scaler.transform(X_test)
+    X_train_scaled = scaler.fit_transform(X_train) * np.pi
+    X_test_scaled = scaler.transform(X_test) * np.pi
     
     X_train_padded = np.pad(X_train_scaled, pad_width=[(0, 0), (0, 2)])
     X_test_padded = np.pad(X_test_scaled, pad_width=[(0, 0), (0, 2)])
 
-    # L2 normalization for Efficient SU2
-    X_train_normalized = (
-        X_train_padded /
-        np.linalg.norm(X_train_padded, axis=1, keepdims=True)
-    )
+    
+    return X_train_padded, X_test_padded
 
-    X_test_normalized = (
-        X_test_padded /
-        np.linalg.norm(X_test_padded, axis=1, keepdims=True)
-    )
-    return X_train_normalized, X_test_normalized
+def angular_preparation(X_train : np.ndarray, X_test : np.ndarray):
+    scaler = MinMaxScaler()
+        
+    X_train_scaled = scaler.fit_transform(X_train) * np.pi
+    X_test_scaled = scaler.transform(X_test) * np.pi
+    return X_train_scaled, X_test_scaled
