@@ -263,10 +263,10 @@ The results table therefore follows this structure:
 
 | Model | Accuracy | Malignant Precision | Malignant Recall | Malignant F1 | Benign Precision | Benign Recall | Benign F1 | Macro F1 | Balanced Accuracy |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Linear SVM | 0.9525 | 0.9471 | 0.9243 | 0.9353 | 0.9561 | 0.9691 | 0.9625 | 0.9489 | 0.9467 |
-| RBF SVM | 0.9210 | 0.9681 | 0.8160 | 0.8830 | 0.9020 | 0.9831 | 0.9402 | 0.9116 | 0.8995 |
-| Polynomial SVM | 0.9122 | 0.9613 | 0.7971 | 0.8693 | 0.8922 | 0.9803 | 0.9337 | 0.9015 | 0.8887 |
-| Sigmoid SVM | 0.4497 | 0.2064 | 0.1652 | 0.1804 | 0.5531 | 0.6194 | 0.5827 | 0.3816 | 0.3923 |
+| Linear SVM | 0.9736 | 0.99 | 0.9386 | 0.9635 | 0.9647 | 0.9943 | 0.9793 | 0.9714 | 0.9665 |
+| RBF SVM | 0.9806 | 0.9902 | 0.9575 | 0.9735 | 0.9753 | 0.9944 | 0.9847 | 0.9791 | 0.9760 |
+| Polynomial SVM | 0.9754 | 0.9857 | 0.9482 | 0.9664 | 0.9699 | 0.9915 | 0.9805 | 0.9735 | 0.9699 |
+| Sigmoid SVM | 0.3092 | 0.0198 | 0.0187 | 0.0192 | 0.4512 | 0.4820 | 0.4657 | 0.2424 | 0.2503 |
 | EfficientSU2 Quantum Kernel | 0.9718 | 0.9714 | 0.9528 | 0.9618 | 0.9724 | 0.9831 | 0.9777 | 0.9697 | 0.9680 |
 | Custom Quantum Kernel | 0.9736 | 0.9724 | 0.9574 | 0.9646 | 0.9751 | 0.9831 | 0.9790 | 0.9718 | 0.9703 |
 ---
@@ -393,6 +393,7 @@ The exact filenames may evolve as the project develops.
 
 ### Planned
 
+- [ ] Observing the kernel matrices of quantum approaches.
 - [ ] Comparing classical and quantum methods
 - [ ] Investigating different quantum encoding strategies
 - [ ] Studying the effect of circuit depth
